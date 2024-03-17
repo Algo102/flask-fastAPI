@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Введите число</h1>
+    <form action="/result" method="post">
+        <input type="number" name="number" class="form-control" placeholder="Введите число" required>
+        <button type="submit" class="btn btn-primary mt-3">Отправить</button>
+    </form>
+</div>
+
+</body>
+</html>
+
