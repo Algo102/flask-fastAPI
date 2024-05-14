@@ -13,7 +13,7 @@ def show_if():
     context = {
         'title': 'Ветвление',
         'user': 'Крутой хакер',
-        'number': 7,
+        'number': 2,
     }
     return render_template('show_if.html', **context)
 

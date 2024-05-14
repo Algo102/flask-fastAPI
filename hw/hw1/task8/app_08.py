@@ -8,11 +8,11 @@ def index():
     content = {'title': 'Главная'}
     return render_template('main.html', **content)
 
+
 @app.route('/main/')
 def main():
     content = {'title': 'Главная'}
     return render_template('main.html', **content)
-
 
 
 @app.route('/about/')

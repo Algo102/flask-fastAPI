@@ -30,14 +30,19 @@ def contact():
     return 'Contact'
 
 
-@app.route('/summ/<int:num1>/<int:num2>/')
+@app.route('/summ/<int:num1>/<int:num2>/')  # можно сразу переменные передать без summ
 def summation(num1, num2):
     return str(num1 + num2)
 
 
-@app.route('/lenstr/<text>/')
+@app.route('/lenstr/<text>/')  # string: указывать не обязательно
 def lenstr(text):
     return str(len(text))
+
+
+@app.route('/get-lenght/<string:row>')
+def get_lenght(row):
+    return str(len(row))
 
 
 html = """
@@ -48,7 +53,12 @@ html = """
 
 @app.route('/web/')
 def webpage():
-    return html
+    # return html
+    # или
+    return """
+            <h1>Моя первая страница</h1>
+            <p> Привет мир!</p>
+            """
 
 
 if __name__ == '__main__':

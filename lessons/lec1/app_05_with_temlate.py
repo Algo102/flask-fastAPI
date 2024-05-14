@@ -1,3 +1,5 @@
+# render_template - для отрисовки шаблона. Используется Jinja-ей
+
 from flask import Flask, render_template
 
 app = Flask(__name__)

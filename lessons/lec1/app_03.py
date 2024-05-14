@@ -2,6 +2,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
+# string - по умолчанию, текст
+# int - позитивные целые числа
+# float - позитивные числа с плавующей точкой
+# path - как и стринг, но принимает слеши
+# uuid - строки UUID
+
 
 @app.route('/')
 @app.route('/<name>/')

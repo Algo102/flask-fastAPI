@@ -7,4 +7,18 @@
     <orderEntry type="jdk" jdkName="Python 3.11 (flask_fastAPI)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/lessons/lec1/templates" />
+        <option value="$MODULE_DIR$/seminars/sem1/templates" />
+        <option value="$MODULE_DIR$/seminars/sem2/templates" />
+        <option value="$MODULE_DIR$/lessons/lec2/templates" />
+        <option value="$MODULE_DIR$/lessons/lec3/templates" />
+        <option value="$MODULE_DIR$/hw/hw1/task8/templates" />
+        <option value="$MODULE_DIR$/hw/hw1/task9/templates" />
+        <option value="$MODULE_DIR$/hw/hw2/templates" />
+      </list>
+    </option>
+  </component>
 </module>

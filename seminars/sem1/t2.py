@@ -10,24 +10,24 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 _users = [{'name': 'Никанор',
-               'lastname': 'Guff',
-               'age': '18',
-               'average_mark': '4.6',
-               },
-              {'name': 'Феофан',
-               'lastname': 'Smith',
-               'age': '25',
-               'average_mark': '4.8',
-               },
-              {'name': 'Оверран',
-               'lastname': 'Forest',
-               'age': '22',
-               'average_mark': '4.7',
-               }, ]
+           'lastname': 'Guff',
+           'age': '18',
+           'average_mark': '4.6',
+           },
+          {'name': 'Феофан',
+           'lastname': 'Smith',
+           'age': '25',
+           'average_mark': '4.8',
+           },
+          {'name': 'Оверран',
+           'lastname': 'Forest',
+           'age': '22',
+           'average_mark': '4.7',
+           }, ]
+
 
 @app.route('/table/')
 def table():
-
     return render_template('table.html', users=_users)
 
 

@@ -8,15 +8,15 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 _news = [{'title': 'Никанор',
-          'content': 'lorem ipsum dolor sit',
+          'content': 'lorem ipsum dolor sit ipsum dolor sit',
           'date': '2024-02-04',
           },
          {'title': 'Феофан',
-          'content': 'lorem5 ipsum dolor sit',
+          'content': 'lorem5 ipsum dolor sit ipsum dolor',
           'date': '2024-03-03',
           },
          {'title': 'Оверран',
-          'content': 'lorem6 ipsum dolor sit',
+          'content': 'lorem10 ipsum dolor sit ipsum dolor orem5 ipsum dolor sit',
           'date': '2024-05-05',
           }, ]
 

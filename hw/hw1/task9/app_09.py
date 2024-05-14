@@ -33,7 +33,7 @@ def jacket():
     return render_template('jacket.html', **content)
 
 
-@app.route('/clothes/costumes/')
+@app.route('/costumes/')
 def costumes():
     content = {'title': 'Костюмы'}
     return render_template('costumes.html', **content)
