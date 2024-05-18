@@ -1,4 +1,4 @@
-# abort - для прерывания работы текущей вью и вызови
+# abort - для прерывания работы текущей вью и вызова
 # errorhandler, к примеру со значением 404
 
 from flask import Flask, request, render_template, abort
@@ -12,6 +12,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return '<h1>Hello world</h1>'
+
 
 @app.route('/blog/<int:id>')
 def get_blog_by_id(id):

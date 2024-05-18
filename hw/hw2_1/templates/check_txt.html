@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Check text{% endblock %}
+
+{% block content %}
+
+<h1 class="text-monospace">Check text</h1>
+<form method="post">
+    <textarea name="text" placeholder="Enter text" rows="10" cols="50"></textarea>
+    <br>
+    <input type="submit" value="Посчитать">
+</form>
+
+{% endblock %}

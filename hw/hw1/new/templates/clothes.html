@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <ul class="nav nav-pills justify-content-center align-items-center">
+        <li class="nav-item">
+            <a href="/costumes/" class="nav-link">Костюмы</a>
+        </li>
+    </ul>
+    <div class="row">
+        <h1 class="col-12 col-md-12 display-3">Одежда различных брендов</h1>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <p>Потрясающая блузка. Серо-голубой цвет очень красивый, ткань тонкая, с красивой фактурой, но не просвечивает</p>
+            <img src="../static/image/clothes1.jpg" class="col-12 col-md-6 img-fluid rounded-circle" alt="Блузка">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <p>Базовые женские брюки-палаццо с высокой талией из мягкого льна</p>
+            <img src="../static/image/clothes2.jpg" class="col-12 col-md-6 img-fluid rounded-circle" alt="Брюки">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <p>Джинсовая мини-юбка с добавлением хлопка идеальная вещь для создания повседневного комфортного образа</p>
+            <img src="../static/image/clothes3.jpg" class="col-12 col-md-6 img-fluid rounded-circle" alt="Юбка">
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,3 +1,10 @@
+# 400 - неверный запрос
+# 401 - не авторизован
+# 403 - доступ запрещен
+# 404 - страница не найдена
+# 500 - ошибка сервера
+
+
 # Имитируем ошибку сервера
 
 from flask import Flask, request, render_template, abort
@@ -11,6 +18,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return '<h1>Hello world</h1>'
+
 
 @app.route('/blog/<int:id>')
 def get_blog_by_id(id):
@@ -39,7 +47,6 @@ def page_not_found(e):
         'url': request.base_url,
     }
     return render_template('500.html', **context), 500
-
 
 
 if __name__ == '__main__':

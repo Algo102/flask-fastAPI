@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Калькулятор{% endblock %}
+
+{% block content %}
+
+<h1 class="text-monospace">Калькулятор</h1>
+<form method="post">
+    <input type="number" name="a" placeholder="Entre value">
+    <input type="number" name="b" placeholder="Entre value">
+    <select id="operation" name="operation">
+        <option value="add">+</option>
+        <option value="substract">-</option>
+        <option value="multiplay">*</option>
+        <option value="divide">/</option>
+    </select>
+    <br>
+    <input type="submit" value="Посчитать">
+</form>
+
+{% endblock %}

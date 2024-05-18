@@ -1,4 +1,7 @@
-# Для перенаправления в Flask используется функция redirect().
+# Для перенаправления пользователя в Flask используется
+# функция redirect(). К примеру, перенаправить пользователя после
+# авторизации на гланую страницу или после регистрации отправить
+# на страницу автоизации
 from flask import Flask, redirect, url_for
 
 app = Flask(__name__)
@@ -13,7 +16,7 @@ def index():
 # главную страницу при помощи url_for
 @app.route('/redirect/')
 def redirect_to_index():
-    return redirect(url_for('index'))
+    return redirect(url_for('index'))  # index - имя функции
 
 
 # С помощью redirect перенаправили на внешний URL

@@ -6,8 +6,8 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     context = {
-    'title': 'Главная',
-    'name': 'Харитон'
+        'title': 'Главная',
+        'name': 'Харитон'
     }
     response = make_response(render_template('main.html', **context))
     response.headers['new_head'] = 'New value'

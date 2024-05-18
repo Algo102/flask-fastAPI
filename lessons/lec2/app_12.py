@@ -1,10 +1,16 @@
+# flash() - пинимает сообщение и его категорию, сохраняет во
+# временном ханилище, при этом нужно использовать секретный ключ,
+# а для этого используются сессии. Для этого в шаблоне html
+# используем get_flashed_messages
+
 from flask import Flask, flash, redirect, render_template, request, url_for
 
 
 app = Flask(__name__)
+
 app.secret_key = b'e236e8d5008cf89ac35084b84f6389a248c7062b4c62c50bf2b6aa5eb6474b26'
 
-# Генерация секретного надежного ключа
+# Генерация секретного надежного ключа в Python Console
 # import secrets
 # secrets.token_hex()
 
@@ -14,14 +20,13 @@ def index():
     return 'Добро пожаловать на главную страницу!'
 
 
-
 @app.route('/form/', methods=['GET', 'POST'])
 def form():
     if request.method == 'POST':
         # Обработка данных формы
         flash('Форма успешно отправлена!', 'success')
         return redirect(url_for('form'))
-    return render_template('flash_form.html')
+    return render_template('flash_form.html')  # Если GET
 
 
 if __name__ == '__main__':

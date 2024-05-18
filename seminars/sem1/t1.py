@@ -35,7 +35,7 @@ def summation(num1, num2):
     return str(num1 + num2)
 
 
-@app.route('/lenstr/<text>/')  # string: указывать не обязательно
+@app.route('/lenstr/<text>/')  # string: указывать не обязательно(по умолчанию)
 def lenstr(text):
     return str(len(text))
 

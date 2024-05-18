@@ -3,12 +3,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+# @app.route('/')
+# def index():
+#     content = {'title': 'Главная'}
+#     return render_template('main.html', **content)
+
 @app.route('/')
-def index():
-    content = {'title': 'Главная'}
-    return render_template('main.html', **content)
-
-
 @app.route('/main/')
 def main():
     content = {'title': 'Главная'}

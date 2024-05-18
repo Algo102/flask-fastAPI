@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <h1 class="col-12 col-md-12 display-3">Выберите себе куртку</h1>
+    </div>
+    <div class="row">
+        {% for jacket in jackets %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <p>{{ jacket.text }}</p>
+            <img src="../static/image/{{ jacket.image }}" class="col-12 col-md-6 img-fluid rounded-circle" alt="Куртки">
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

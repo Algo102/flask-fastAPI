@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true)%}
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<h1 class="text-monospace">Welcom flash</h1>
+<form method="post">
+    <input type="text" name="name" placeholder="Name">
+    <input type="submit" value="Приветствую">
+</form>
+
+{% endblock %}

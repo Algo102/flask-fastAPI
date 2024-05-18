@@ -1,4 +1,5 @@
 # Раздельные ПОСТ и ГЕТ запросы. Роут
+# Работает также, как и объединенный submit в app_05
 
 from flask import Flask, request, render_template
 
