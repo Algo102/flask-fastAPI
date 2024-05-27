@@ -1,3 +1,6 @@
+# Создали взаимодействе с базой данных
+# второй вариант через model.
+# Автоматически создалась папка instance
 from flask import Flask
 from lessons.lec3.models_02 import db
 

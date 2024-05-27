@@ -132,11 +132,30 @@ def form_mail():
     return render_template('form_mail.html')
 
 
+#1
 @app.route('/logout/')
 def logout():
     response = make_response(redirect(url_for('index')))
     response.set_cookie('user_data', '', expires=0)
     return response
+
+
+#2
+# @app.route('/logout/')
+# def logout():
+#     response = make_response(redirect('/'))
+#     response.set_cookie('name', '', expires=0)
+#     response.set_cookie('email', '', expires=0)
+#     return response
+
+
+#3
+# @app.route('/logout/')
+# def logout():
+#     response = make_response(redirect('/'))
+#     response.delete_cookie('name')
+#     response.delete_cookie('email')
+#     return response
 
 
 if __name__ == '__main__':

@@ -11,7 +11,8 @@ def index():
     return render_template('about.html')
     # return 'Hi'
 
-@app.post('/submit')
+
+@app.post('/submit/')
 # @app.route('/submit', methods=['GET', 'POST'])
 def submit():
     name = request.form.get('name')

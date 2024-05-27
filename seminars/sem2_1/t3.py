@@ -9,6 +9,7 @@ app = Flask(__name__)
 LOGIN = 'admin'
 PASSWD = '1234'
 
+
 @app.route('/', methods=['POST', 'GET'])
 def login():
     if request.method == 'GET':

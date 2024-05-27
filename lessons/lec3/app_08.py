@@ -44,15 +44,18 @@ def add_user():
     print('vaha2 add in DB!')
 
 
-@app.cli.command('edit-vaha2')
+# при редактировании, нужно закрывать базу
+@app.cli.command('edit-john')
 def edit_user():
-    # С помощью фильтра находим запи
-    user = User.query.filter_by(username='vaha2').first()
-    user.mail = 'newvaha2-email.gmail.com'
+    # С помощью фильтра находим запись, еслиб записей John было больше, искали бы первого
+    user = User.query.filter_by(username='John').first()
+    user.email = 'new_email@gmail.com'
     db.session.commit()  # Зафиксировали изменения
-    print('Edit vaha2 mail in DB')
+    print('Edit John mail in DB')
 
 
+# обычно ничего не удаляют, а добавляют новую колонку со значением False,
+# а у всех остальных значение True
 @app.cli.command('del-john')
 def del_user():
     user = User.query.filter_by(username='John').first()

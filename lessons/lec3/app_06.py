@@ -11,7 +11,7 @@ def index():
     return 'Hi!'
 
 
-# init-db команда для консоли c помощью cli
+# модуль cli для запуска команд с консоли
 @app.cli.command('init-db')
 def init_db():
     db.create_all()
@@ -19,6 +19,8 @@ def init_db():
 
 
 # add-john команда для консоли
+# т.к. wsgi не в корне, то
+# flask --app lessons.lec3.app_06 add-john
 @app.cli.command('add-john')
 def add_user():
     user = User(username='John', email='john@gmail.com')
@@ -45,5 +47,3 @@ def add_user():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-

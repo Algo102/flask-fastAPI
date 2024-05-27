@@ -4,6 +4,7 @@ from datetime import datetime
 
 db = SQLAlchemy()
 
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
@@ -12,3 +13,14 @@ class User(db.Model):
 
     def __repr__(self):
         return f'User({self.username}, {self.email})'
+
+# # типы данных для SQLAlchemy
+# Integer
+# String
+# Text - текстовое поле
+# Boolean
+# DateTime
+# Float
+# Decimal - десятичное число, более точно чем Float, подходит для денег
+# Enum -  перечисление значений
+# ForeignKey - внешний ключ к другой таблице

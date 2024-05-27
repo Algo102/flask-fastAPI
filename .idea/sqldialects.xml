@@ -2,5 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/selfedu/les8/sq_db.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/selfedu/les9/FDataBase.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/selfedu/les9/sq_db.sql" dialect="SQLite" />
   </component>
 </project>

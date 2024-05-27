@@ -1,10 +1,10 @@
 from datetime import datetime, timedelta
 
 from flask import Flask, render_template, jsonify
-from lection3_additional_opportunity_flask.models_05 import db, User, Post
+from lessons.lec3.models_05 import db, User, Post
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///../../instance/mydatabase.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///../../../instance/mydatabase.db"
 db.init_app(app)
 
 
@@ -46,7 +46,7 @@ def get_posts_by_author(user_id):
 
 @app.route('/posts/last_week/')
 def get_posts_last_week():
-    date = datetime.now() - timedelta(days=7)
+    date = datetime.utcnow() - timedelta(days=7)
     posts = Post.query.filter(Post.created_at >= date).all()
     if posts:
         return jsonify([{'id': post.id, 'title': post.title,

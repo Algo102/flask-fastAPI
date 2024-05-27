@@ -20,7 +20,7 @@ def init_db():
 
 
 @app.cli.command('fill-db')
-def fill_dables():
+def fill_dables():  # Добавляем пользователей тестовыми данными
     count = 5
     for user in range(1, count + 1):
         new_user = User(username=f'user{user}', email=f'user{user}@mail.ru')
@@ -34,7 +34,6 @@ def fill_dables():
     db.session.commit()
 
 
-# add-john команда для консоли
 @app.cli.command('add-john')
 def add_user():
     user = User(username='John', email='john@gmail.com')

@@ -33,7 +33,7 @@ def add_user():
     user = User(username='Smith', email='smith@gmail.com')
     db.session.add(user)
     db.session.commit()
-    print('John add in DB!')
+    print('smith add in DB!')
 
 
 @app.cli.command('add-vaha')
@@ -41,19 +41,18 @@ def add_user():
     user = User(username='Vaha', email='vaha@gmail.com')
     db.session.add(user)
     db.session.commit()
-    print('John add in DB!')
+    print('vaha add in DB!')
 
 
+# при редактировании, нужно закрывать базу
 @app.cli.command('edit-john')
 def edit_user():
-    # С помощью фильтра находим запи
+    # С помощью фильтра находим запись, еслиб записей John было больше, искали бы первого
     user = User.query.filter_by(username='John').first()
-    user.mail = 'new-email.gmail.com'
+    user.email = 'new_email@gmail.com'
     db.session.commit()  # Зафиксировали изменения
     print('Edit John mail in DB')
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-

@@ -2,6 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/seminars/sem3" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (flask_fastAPI)" jdkType="Python SDK" />
@@ -14,13 +15,14 @@
         <option value="$MODULE_DIR$/seminars/sem1/templates" />
         <option value="$MODULE_DIR$/seminars/sem2/templates" />
         <option value="$MODULE_DIR$/lessons/lec2/templates" />
-        <option value="$MODULE_DIR$/lessons/lec3/templates" />
         <option value="$MODULE_DIR$/hw/hw1/task8/templates" />
         <option value="$MODULE_DIR$/hw/hw1/task9/templates" />
-        <option value="$MODULE_DIR$/hw/hw2/templates" />
         <option value="$MODULE_DIR$/selfedu/les2/templates" />
         <option value="$MODULE_DIR$/selfedu/les7/templates" />
         <option value="$MODULE_DIR$/hw/hw1/new/templates" />
+        <option value="$MODULE_DIR$/selfedu/les9/templates" />
+        <option value="$MODULE_DIR$/seminars/sem3/task2/templates" />
+        <option value="$MODULE_DIR$/seminars/sem3/task4/templates" />
       </list>
     </option>
   </component>

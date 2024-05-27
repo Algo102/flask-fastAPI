@@ -8,3 +8,13 @@ class LoginForm(FlaskForm):
     # Импортируем два поля, с обязательным заполнением
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
+
+# Поля форм
+# StringField
+# IntegerField
+# FloatField
+# BooleanField - чекбокс
+# SelectField - выпадающий список
+# DataField - ввод даты
+# FileField - загрузка файла
+# PasswordField

@@ -21,3 +21,9 @@ def init_db():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# в терминале запускаем при условии, что wsgi корректен
+# flask init-db
+# т.к. wsgi не в корне, то
+# flask --app lessons.lec3.app_05 init-db
+# в папке instance появилась БД

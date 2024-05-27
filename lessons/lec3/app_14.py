@@ -1,3 +1,5 @@
+# pip install flask-wtf для рабдоты с формами
+
 from flask import Flask
 from flask_wtf import FlaskForm
 # Определение классов форм, описание полей, валидация
