@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_wtf.csrf import CSRFProtect
 from werkzeug.security import generate_password_hash, check_password_hash
+# generate_password_hash - зашифровывает пароль
+# check_password_hash - сравнивает с зашифрованным паролем в базе
 from task8.forms import RegisterForm
 
 from task8.model import db, User

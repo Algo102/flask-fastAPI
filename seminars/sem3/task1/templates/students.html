@@ -8,7 +8,9 @@
 <div class="row">
     {% for student in students %}
         <p class="col-12 col-md-6">Имя студента: {{ student.firstname }} Фамилия студента: {{ student.lastname }}<br>
-            Факультет: {{ student.faculty.name }}</p>
+            Факультет: {{ student.faculty.name }}
+<!--            Через обратную ссылку backref-->
+        </p>
     {% endfor %}
 </div>
 

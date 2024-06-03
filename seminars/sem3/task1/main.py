@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 # from flask_sqlalchemy import SQLAlchemy
-from task1.model import db, Student, Faculty
+from task1 import db, Student, Faculty
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'

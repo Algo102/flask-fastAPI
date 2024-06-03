@@ -31,6 +31,7 @@ class Faculty(db.Model):
     students = db.relationship('Student', backref='faculty', lazy=True)
     # students = db.relationship('Student', backref=db.backref('faculty'), lazy=True)
     # с вторым вариантом вроде как Faculty нужно поднять выше Student
+    decan = db.Column(db.String(80), unique=True, nullable=False)
 
     def __repr__(self):
         return f'Faculty({self.name}'
