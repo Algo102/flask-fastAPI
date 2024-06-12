@@ -1,3 +1,5 @@
+# зоздаем окуружение .venv - имя окружения
+# python -m venv .venv
 # .\venv\Scripts\Activate.ps1
 # pip install fastapi
 # Если во Flask сервер стоит по умолчанию, то в FastAPI ставим его отдельно
@@ -5,6 +7,11 @@
 # Для запуска приложения
 # uvicorn lessons.les5_fastAPI.main_01:app --reload
 # Также эту строку можно прописать в пайчарм, чтоб запускать по кнопке
+# configuration - edit/ shelf script / script / name b uvicorn lessons.les5_fastapi.main_08:app --reload
+# также можно запустить ч.з. main
+# if __name__ == '__main__':
+#     uvicorn.run('task_3_4_5:app', host='localhost', port=8000, reload=True)
+
 
 from fastapi import FastAPI
 
